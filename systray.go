@@ -111,10 +111,20 @@ func (item *MenuItem) SetTitle(title string) {
 	item.update()
 }
 
+// GetTitle get the text that is displayed on a menu item
+func (item *MenuItem) GetTitle() string {
+	return item.title
+}
+
 // SetTooltip set the tooltip to show when mouse hover
 func (item *MenuItem) SetTooltip(tooltip string) {
 	item.tooltip = tooltip
 	item.update()
+}
+
+// GetTooltip get the text that is showed when mouse hover
+func (item *MenuItem) GetTooltip() string {
+	return item.tooltip
 }
 
 // Disabled checkes if the menu item is disabled
